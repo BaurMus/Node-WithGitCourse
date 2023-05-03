@@ -12,5 +12,8 @@
     "git"
   ],
   "author": "Baur Mus <musilimov_b@mail.ru>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0"
+  }
 }
