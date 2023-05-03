@@ -12,18 +12,29 @@ const path = require("path");
 
 const filePath = path.join(__dirname, 'test', 'text.txt');
 
-fs.writeFile(filePath, 'Hello NodeJS!', (err) => {
+// fs.writeFile(filePath, 'Hello NodeJS!', (err) => {
+//   if (err) {
+//     throw err
+//   }
+
+//   console.log('Файл создан');
+
+//   fs.appendFile(filePath, '\nHello Again!', (err) => {
+//     if (err) {
+//       throw err
+//     }
+  
+//     console.log('Файл создан');
+//   })
+// });
+
+fs.readFile(filePath, 'utf-8', (err, content) => {
   if (err) {
     throw err
   }
 
-  console.log('Файл создан');
+  console.log(content);
 
-  fs.appendFile(filePath, '\nHello Again!', (err) => {
-    if (err) {
-      throw err
-    }
-  
-    console.log('Файл создан');
-  })
+  // const data = Buffer.from(content);
+  // console.log('Content: ', data.toString());
 });
