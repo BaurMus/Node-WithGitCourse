@@ -13,10 +13,10 @@
   ],
   "author": "Baur Mus <musilimov_b@mail.ru>",
   "license": "ISC",
-  "dependencies": {
-    "chalk": "^5.2.0"
-  },
   "devDependencies": {
     "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2"
   }
 }

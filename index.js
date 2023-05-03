@@ -1,1 +1,3 @@
-console.log('Hello NodeJs');
+const chalk = require('chalk');
+
+console.log(chalk.blue('Hello NodeJs'));
